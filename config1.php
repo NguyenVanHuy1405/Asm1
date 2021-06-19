@@ -10,9 +10,4 @@
 			$conn_string = "host=$host_heroku port=5432 dbname=$db_heroku user=$user_heroku password=$pw_heroku";
 			# Connect to DATABASE
 			$pg_conn = pg_connect($conn_string);
-			# Get data by query
-			$result = pg_query($pg_conn, "select * from shop1;");
-			#var_dump(pg_fetch_all($result));
-			
-			$numrows = pg_num_rows($result)
-		?>
+	
