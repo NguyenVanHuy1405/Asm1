@@ -1,5 +1,5 @@
 <?php
-include("config.php");
+include("config1.php");
 	#ob_start();
 session_start();
 $error = "";
@@ -69,7 +69,7 @@ if($data)
 {
 echo "<script>alert('Updated Successfully!')</script>";
 ?>
-<meta http-equiv="refresh" content="0; url=https://localhost/shop1.php" />
+<meta http-equiv="refresh" content="0; url=https://fptapptech.herokuapp.com/shop1.php">
 <?php
 }
 else
