@@ -111,10 +111,10 @@ while ($result=pg_fetch_assoc($data))
 {
 echo "
 <tr>
-<td>".$result['productID']."</td>
+<td>".$result['productid']."</td>
 <td>".$result['productname']."</td>
 <td>".$result['productprice']."</td>
-<td>".$result['productquality']."</td>
+<td>".$result['status']."</td>
 </tr>
 ";
 }
