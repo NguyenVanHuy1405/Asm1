@@ -12,9 +12,9 @@ if (!$pg_conn)
 {
 die('Error: Could not connect: ' . pg_last_error());
 }
-$pi=$_GET['pi'];
-$pn=$_GET['pn'];
-$pp=$_GET['pp'];
+$pi=$_GET['id'];
+$pn=$_GET['n'];
+$pp=$_GET['p'];
 $stt=$_GET['stt'];
 ?>
 <html>
@@ -35,17 +35,17 @@ $stt=$_GET['stt'];
 
  <tr>
  <td>Product ID</td>
- <td><input type="text" value="<?php echo "$pi" ?>" name="productid" required></td>
+ <td><input type="text" value="<?php echo "$id" ?>" name="productid" required></td>
  </tr>
 
  <tr>
  <td>Product Name</td>
- <td><input type="text" value="<?php echo "$pn" ?>" name="productname" required></td>
+ <td><input type="text" value="<?php echo "$n" ?>" name="productname" required></td>
  </tr>
 
  <tr>
  <td>Product Price</td>
- <td><input type="text" value="<?php echo "$pp" ?>" name="productprice" required></td>
+ <td><input type="text" value="<?php echo "$p" ?>" name="productprice" required></td>
  </tr>
 
  <tr>
