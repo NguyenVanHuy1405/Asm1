@@ -8,7 +8,7 @@
 			# Connect to DATABASE
 			$pg_conn = pg_connect($conn_string);
 
-if (!$pg_)
+if (!$pg_conn)
 {
 die('Error: Could not connect: ' . pg_last_error());
 }
