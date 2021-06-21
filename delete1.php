@@ -8,7 +8,7 @@
 			# Connect to DATABASE
 			$pg_conn = pg_connect($conn_string);
 
-$productid = $_GET['productid'];
+$productid = $_GET['pi'];
 $query = "Delete from shop1 where productid ='$productid'");
 
 $del = pg_query($pg_conn,$query);
