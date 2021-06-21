@@ -24,11 +24,11 @@
   <thread style="text-align:left">
                 <tr>
 		
-                <th style="background-color:#FFFF00"><p style="color:darkblue">Product ID<p></th>
-                <th style="background-color:#FF7F50"><p style="color:darkblue">Product Name<p></th>
-                <th style="background-color:#FFFF00"><p style="color:darkblue">Product Price<p></th>
-                <th style="background-color:#FF7F50"><p style="color:darkblue">Status<p></th>
-		 <th style="background-color:#BA55D3" colspan="2" align="center">Operation</th>	
+                <tr><th style="background-color:#FF0040"><p style="color:darkblue">Product ID<p></th></tr>
+                <tr><th style="background-color:#585858"><p style="color:darkblue">Product Name<p></th></tr>
+                <tr><th style="background-color:#FF0040"><p style="color:darkblue">Product Price<p></th></tr>
+                <tr><th style="background-color:#FF7F50"><p style="color:darkblue">Status<p></th></tr>
+		<tr> <th style="background-color:#BA55D3" colspan="2" align="center">Operation</th></tr>	
                 </tr>
 <?php
             $host_heroku = "ec2-3-231-69-204.compute-1.amazonaws.com";
