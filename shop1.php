@@ -57,9 +57,9 @@ echo "
                 <td>".$result['productprice']."</td>
                 <td>".$result['status']."</td>
 <td><a
-href='update1.php?pi=$result[productid]&pn=$result[productname]&pp=$result[productprice]&stt=$result[status]'>
+href='update1.php?id=$result[productid]&n=$result[productname]&p=$result[productprice]&stt=$result[status]'>
 Edit/Update</td>
-<td><a href='delete1.php?rn=$result[productid]'>Delete</td>
+<td><a href='delete1.php?id=$result[productid]'>Delete</td>
 </tr>
 ";
 }
