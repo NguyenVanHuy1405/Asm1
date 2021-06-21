@@ -59,7 +59,7 @@ echo "
 <td><a
 href='update1.php?pi=$result[productid]&pn=$result[productname]&pp=$result[productprice]&stt=$result[status]'>
 Edit/Update</td>
-<td><a href='delete1.php?pi=$result[productid]'>Delete</td>
+<td><a href='delete1.php?rn=$result[productid]'>Delete</td>
 </tr>
 ";
 }
