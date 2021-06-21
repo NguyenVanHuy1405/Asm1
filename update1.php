@@ -50,7 +50,7 @@ $stt=$_GET['stt'];
 
  <tr>
  <td>Status</td>
- <td><input type="text" value="<?php echo "$stt" ?>" name="quantityonhand" required></td>
+ <td><input type="text" value="<?php echo "$stt" ?>" name="status" required></td>
  </tr>
 
  <tr>
