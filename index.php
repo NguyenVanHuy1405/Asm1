@@ -40,7 +40,8 @@
 			}
 			if ($users == "ATNshop2" && $pass == "staff") 
 			{
-				echo "login for shop 2";
+				header("location: shop2.php");
+				#echo "login for shop 2";
 			}
 			pg_close();	
 		}
