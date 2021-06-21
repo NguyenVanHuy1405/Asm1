@@ -57,11 +57,11 @@
             <?php
             if($_GET['submit'])
             {
-            $pi=$_GET['productid'];
-            $pn=$_GET['productname'];
-            $pp=$_GET['productprice'];
+            $id=$_GET['productid'];
+            $n=$_GET['productname'];
+            $p=$_GET['productprice'];
             $stt=$_GET['status'];
-            $query = "INSERT INTO shop1 VALUES ('$pi','$pn','$pp','$stt')";
+            $query = "INSERT INTO shop1 VALUES ('$id','$n','$p','$stt')";
             $data = pg_query($pg_conn,$query);
             if($data)
             {
