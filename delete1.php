@@ -8,19 +8,21 @@
 			# Connect to DATABASE
 			$pg_conn = pg_connect($conn_string);
 
-$productid = $_GET['pi'];
+$productid = $_GET['rn'];
 $query = "Delete from shop1 where productid ='$productid'");
 
 $del = pg_query($pg_conn,$query);
 
 if($del)
 {
-    pg_close($pg_conn); // Close connection
-    <meta http-equiv="refresh" content="0; url=https://fptapptech.herokuapp.com/shop1.php" />
-    exit;	
+    echo ="<font color='green'> Record Deleted from Database";		
 }
+?>
+ <meta http-equiv="refresh" content="0; url=https://fptapptech.herokuapp.com/shop1.php" />
+<?php
+
 else
 {
-    echo "Error deleting record"; // display error message if not delete
+    echo = "<font color='red'>Error deleting record"; // display error message if not delete
 }
 ?>
