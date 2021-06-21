@@ -24,7 +24,7 @@ table {
 </style>
 	 <style>
  body {
- background-image: url('login1.jpeg');
+ background-image: url('.jpeg');
  background-attachment: fixed;
  background-size: 100%100%;
  }
