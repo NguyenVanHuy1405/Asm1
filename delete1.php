@@ -12,7 +12,7 @@ if (!$pg_conn)
 {
 die('Error: Could not connect: ' . pg_last_error());
 }
-$productid=$_GET['rn'];
+$productid=$_GET['id'];
 $query = "DELETE FROM shop1 WHERE productid = '$productid'";
 $data = pg_query($pg_conn,$query);
 if($data)
