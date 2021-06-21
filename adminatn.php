@@ -6,7 +6,7 @@
  </ul>
  </head>
  <body>
- <font size="20" color ="red" text-align:center> Welcome to website for admin or boss</font>
+ <font size="20" color ="red" text-align ="center"> Welcome to website for admin or boss</font>
 <style>
 table, th, td {
   border: 1px solid black;
@@ -33,10 +33,10 @@ table {
   <thread style="text-align:left">
                 <tr>
 		
-                <th style="background-color:#EE82EE"><p style="color:#ffff00">Product ID<p></th>
-                <th style="background-color:#FFA07A"><p style="color:#ffff00">Product Name<p></th>
-                <th style="background-color:#EE82EE"><p style="color:#ffff00">Product Price<p></th>
-                <th style="background-color:#FFA07A"><p style="color:#ffff00">Status<p></th>
+                <th style="background-color:#EE82EE"><p style="color:#ffff00"><text-align ="center">Product ID<p></th>
+                <th style="background-color:#FFA07A"><p style="color:#ffff00"><text-align ="center">Product Name<p></th>
+                <th style="background-color:#EE82EE"><p style="color:#ffff00"><text-align ="center">Product Price<p></th>
+                <th style="background-color:#FFA07A"><p style="color:#ffff00"><text-align ="center">Status<p></th>
                 
                 </tr>
 <?php
