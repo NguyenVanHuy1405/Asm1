@@ -7,22 +7,20 @@
 			$conn_string = "host=$host_heroku port=5432 dbname=$db_heroku user=$user_heroku password=$pw_heroku";
 			# Connect to DATABASE
 			$pg_conn = pg_connect($conn_string);
-if (!$pg_conn)
+
+$productid = $_GET['productid'];
+$query = "Delete from shop1 where productid ='$productid'");
+
+$del = pg_query($pg_conn,$query);
+
+if($del)
 {
-die('Error: Could not connect: ' . pg_last_error());
-}
-$productid=$_GET['pi'];
-$query = "DELETE FROM shop1 WHERE productid = '$productid'";
-$data = pg_query($pg_conn,$query);
-if($data)
-{
- echo "<script>alert('Delete Successfully!')</script>";
-?>
-<meta http-equiv="refresh" content="0; url=https://fptapptech.herokuapp.com/shop1.php" />
-<?php
+    pg_close($pg_conn); // Close connection
+    <meta http-equiv="refresh" content="0; url=https://fptapptech.herokuapp.com/shop1.php" />
+    exit;	
 }
 else
 {
- echo "Failed to delete.";
+    echo "Error deleting record"; // display error message if not delete
 }
 ?>
