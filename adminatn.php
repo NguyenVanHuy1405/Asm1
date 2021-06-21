@@ -30,7 +30,7 @@ table {
  }
  </style>
   <table style="width:100%">
-  <thread style="text-align:center">
+  <thread style="text-align:left">
                 <tr>
 		
                 <th style="background-color:#EE82EE"><p style="color:#ffff00">Product ID<p></th>
@@ -85,7 +85,7 @@ echo "
                 <th style="background-color:#FFFF00"><p style="color:darkblue">Product ID<p></th>
                 <th style="background-color:#FF7F50"><p style="color:darkblue">Product Name<p></th>
                 <th style="background-color:#FFFF00"><p style="color:darkblue">Product Price<p></th>
-                <th style="background-color:#FF7F50"><p style="color:darkStatusStatus<p></th>
+                <th style="background-color:#FF7F50"><p style="color:darkblue">Status<p></th>
                 
                 </tr>
 <?php
