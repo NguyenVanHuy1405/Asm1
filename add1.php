@@ -62,7 +62,7 @@
             $pp=$_GET['productprice'];
             $stt=$_GET['status'];
             $query = "INSERT INTO shop1 VALUES ('$pi','$pn','$pp','$stt')";
-            $data = pg_query($pg_heroku,$query);
+            $data = pg_query($pg_conn,$query);
             if($data)
             {
             echo "<script>alert('Added Successfully!')</script>";
