@@ -6,20 +6,8 @@
  </ul>
  </head>
  <body>
- <font 
- size="20" 
- color ="red" 
- text-align:center>
- Welcome to website for admin or boss
- </font>
- <style>
- body {
- background-image: url('login1.jpeg');
- background-attachment: fixed;
- background-size: 100%100%;
- }
- </style>
-   <style>
+ <font size="20" color ="red" text-align:center> Welcome to website for admin or boss</font>
+<style>
 table, th, td {
   border: 1px solid black;
   padding: 5px;
@@ -34,14 +22,21 @@ table {
  }
 }
 </style>
+	 <style>
+ body {
+ background-image: url('login1.jpeg');
+ background-attachment: fixed;
+ background-size: 100%100%;
+ }
+ </style>
   <table style="width:100%">
-  <thread style="text-align:left">
+  <thread style="text-align:center">
                 <tr>
 		
-                <th style="background-color:#FFFF00"><p style="color:darkblue">Product ID<p></th>
-                <th style="background-color:#FF7F50"><p style="color:darkblue">Product Name<p></th>
-                <th style="background-color:#FFFF00"><p style="color:darkblue">Product Price<p></th>
-                <th style="background-color:#FF7F50"><p style="color:darkblue">Status<p></th>
+                <th style="background-color:#EE82EE"><p style="color:#ffff00">Product ID<p></th>
+                <th style="background-color:#FFA07A"><p style="color:#ffff00">Product Name<p></th>
+                <th style="background-color:#EE82EE"><p style="color:#ffff00">Product Price<p></th>
+                <th style="background-color:#FFA07A"><p style="color:#ffff00">Status<p></th>
                 
                 </tr>
 <?php
