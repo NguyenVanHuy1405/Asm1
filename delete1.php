@@ -11,9 +11,10 @@
 $sql = "DELETE FROM shop1 WHERE productid='" . $_GET["productid"] . "'";
 if (pg_query($pg_conn, $sql)) {
     echo "Record deleted successfully";
-} else {
+}
+<meta http-equiv="refresh" content="0; url=https://fptapptech.herokuapp.com/shop1.php">
+else {
     echo "Error deleting record: " . mysqli_error($pg_conn);
 }
-mysqli_close($conn);
+
 ?>
-<meta http-equiv="refresh" content="0; url=https://fptapptech.herokuapp.com/shop1.php">
