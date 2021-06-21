@@ -19,7 +19,7 @@ if($data)
 {
  echo "<script>alert('Delete Successfully!')</script>";
 ?>
-<meta http-equiv="refresh" content="0; url=https://fptapptech.heroku.com/shop2.php" />
+<meta http-equiv="refresh" content="0; url=https://fptapptech.herokuapp.com/shop2.php" />
 <?php
 }
 else
