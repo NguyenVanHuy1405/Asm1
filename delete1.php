@@ -1,5 +1,5 @@
 <?php
-  $host_heroku = "ec2-3-231-69-204.compute-1.amazonaws.com";
+                        $host_heroku = "ec2-3-231-69-204.compute-1.amazonaws.com";
 			$db_heroku = "d5boqk3bekfndr";
 			$user_heroku = "zweujvxfknurip";
 			$pw_heroku = "a34706f696373b39c20d08e062a4bba2c33d0f9febe6eeaa26e77985c92a9e5e";
@@ -8,21 +8,22 @@
 			# Connect to DATABASE
 			$pg_conn = pg_connect($conn_string);
 
-$productid = $_GET['rn'];
-$query = "Delete from shop1 where productid ='$productid'");
-
-$del = pg_query($pg_conn,$query);
-
-if($del)
+if (!$pg_conn)
 {
-    echo ="<font color='green'> Record Deleted from Database";		
+die('Error: Could not connect: ' . pg_last_error());
 }
+$productid=$_GET['rn'];
+$query = "DELETE FROM shop1 WHERE productid = '$productid'";
+$data = pg_query($pg_conn,$query);
+if($data)
+{
+ echo "<script>alert('Delete Successfully!')</script>";
 ?>
- <meta http-equiv="refresh" content="0; url=https://fptapptech.herokuapp.com/shop1.php" />
+<meta http-equiv="refresh" content="0; url=https://fptapptech.heroku.com/shop1." />
 <?php
-
+}
 else
 {
-    echo = "<font color='red'>Error deleting record"; // display error message if not delete
+ echo "Failed to delete.";
 }
 ?>
