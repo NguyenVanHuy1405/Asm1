@@ -44,7 +44,7 @@
             
              <tr>
              <td>Status</td>
-             <td><input type="text" value="" name="quantityonhand" required></td>
+             <td><input type="text" value="" name="" required></td>
              </tr>
             
              <tr>
