@@ -12,9 +12,9 @@ if (!$pg_conn)
 {
 die('Error: Could not connect: ' . pg_last_error());
 }
-$pi=$_GET['id'];
-$pn=$_GET['n'];
-$pp=$_GET['p'];
+$id=$_GET['id'];
+$n=$_GET['n'];
+$p=$_GET['p'];
 $stt=$_GET['stt'];
 ?>
 <html>
