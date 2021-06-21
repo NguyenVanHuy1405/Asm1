@@ -7,7 +7,7 @@
 			$conn_string = "host=$host_heroku port=5432 dbname=$db_heroku user=$user_heroku password=$pw_heroku";
 			# Connect to DATABASE
 			$pg_conn = pg_connect($conn_string);
-            if (!$pg_heroku)
+            if (!$pg_conn)
             {
             die('Error: Could not connect: ' . pg_last_error());
             }
