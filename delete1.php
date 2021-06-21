@@ -9,7 +9,7 @@
 			# Connect to DATABASE
 			$pg_conn = pg_connect($conn_string);
 $sql = "DELETE FROM shop1 WHERE productid='" . $_GET["productid"] . "'";
-if (mysqli_query($pg_conn, $sql)) {
+if (pg_query($pg_conn, $sql)) {
     echo "Record deleted successfully";
 } else {
     echo "Error deleting record: " . mysqli_error($pg_conn);
