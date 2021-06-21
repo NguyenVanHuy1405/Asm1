@@ -77,7 +77,7 @@ input[type=submit]{
   cursor:pointer;
 }
 </style>	  
- <form action="https://fptapptech.herokuapp.com/add1.php">
+ <form action="https://fptapptech.herokuapp.com/add1.php"/>
  <input type="submit" value="Add" />
 </form>
 </body>
