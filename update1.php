@@ -68,7 +68,7 @@ $productname = $_GET['productname'];
 $productprice = $_GET['productprice'];
 $status = $_GET['status'];
   $query = "UPDATE shop1 SET productid='$productid', productname='$productname', productprice='$productprice', status='$status' WHERE productid='$productid' ";
-$data = pg_query($pg_,$query);
+$data = pg_query($pg_conn,$query);
 if($data)
 {
 echo "<script>alert('Updated Successfully!')</script>";
