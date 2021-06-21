@@ -1,7 +1,5 @@
 <?php 
 		
-			echo '<p>TEST POSTGRESQL DATABASE </p>'; 
-			# DATABASE credential
 			$host_heroku = "ec2-3-231-69-204.compute-1.amazonaws.com";
 			$db_heroku = "d5boqk3bekfndr";
 			$user_heroku = "zweujvxfknurip";
