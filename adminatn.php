@@ -6,7 +6,7 @@
  </ul>
 	 <style>
  body {
- background-image: url('.jpeg');
+ background-image: url('admin.jpeg');
  background-attachment: fixed;
  background-size: 100%100%;
  }
