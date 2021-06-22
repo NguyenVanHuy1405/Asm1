@@ -35,7 +35,7 @@ table {
                 
                 </tr>
 <?php
-echo '<h1 style="color:orange"> Databse of ATN Shop 1</h1>';
+echo '<h1 style="color:orange"> Databse of ATN Shop 2</h1>';
             		$host_heroku = "ec2-3-231-69-204.compute-1.amazonaws.com";
 			$db_heroku = "d5boqk3bekfndr";
 			$user_heroku = "zweujvxfknurip";
