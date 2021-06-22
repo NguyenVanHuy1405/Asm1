@@ -71,7 +71,7 @@
   <div class="dropdown-content" style="left:0;">
   <a href="https://fptapptech.herokuapp.com/displayshop1.php">Shop 1</a>
   <a href="https://fptapptech.herokuapp.com/displayshop2.php">Shop 2</a>
-  <a href="#">Link 3</a>
+  <a href="https://fptapptech.herokuapp.com/displayallshop.php">All </a>
   </div>
 </div>
 
