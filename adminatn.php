@@ -92,9 +92,6 @@ body {
     </div>
   </div> 
 </div>
-</body>
- <body>
- <font size="20" color ="red" style="text-align:center"> Welcome to website for admin or boss</font>
 <style>
 table, th, td {
   border: 1px solid black;
