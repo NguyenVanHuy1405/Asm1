@@ -5,47 +5,62 @@
  	<a href="index.php" class="btn btn-info btn-lg"><span class="glyphicon glyphicon-log-out"></span> Log out</a> 
  </ul>
 </head>
-	<nav role="navigation">
-  <ul>
-    <li><a href="#">One</a></li>
-    <li><a href="#">Two</a>
-      <ul class="dropdown">
-        <li><a href="#">Sub-1</a></li>
-        <li><a href="#">Sub-2</a></li>
-        <li><a href="#">Sub-3</a></li>
-      </ul>
-    </li>
-    <li><a href="#">Three</a></li>
-  </ul>
-</nav>
-	li {
- display: block;
- transition-duration: 0.5s;
-}
-
-li:hover {
+	<!DOCTYPE html>
+<style>
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
   cursor: pointer;
 }
 
-ul li ul {
-  visibility: hidden;
-  opacity: 0;
-  position: absolute;
-  transition: all 0.5s ease;
-  margin-top: 1rem;
-  left: 0;
-  display: none;
+.dropdown {
+  position: relative;
+  display: inline-block;
 }
 
-ul li:hover > ul,
-ul li ul:hover {
-  visibility: visible;
-  opacity: 1;
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
   display: block;
 }
 
-ul li ul li {
-  clear: both;
-  width: 100%;
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+</style>
+<body>
+
+<h2>Aligned Dropdown Content</h2>
+<p>Determine whether the dropdown content should go from left to right or right to left with the left and right properties.</p>
+
+<div class="dropdown" style="float:left;">
+  <button class="dropbtn">Chosse</button>
+  <div class="dropdown-content" style="left:0;">
+  <a href="#">Link 1</a>
+  <a href="#">Link 2</a>
+  <a href="#">Link 3</a>
+  </div>
+</div>
+
+</body>
 </html>
