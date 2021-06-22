@@ -9,7 +9,7 @@
   color: red;
   font-family: Arial;
   font-size: 300%;
-  ext-align: center;			
+  text-align: center;			
 
 }
 	</style>	
