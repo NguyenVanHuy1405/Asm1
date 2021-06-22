@@ -4,7 +4,16 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
  	<a href="index.php" class="btn btn-info btn-lg"><span class="glyphicon glyphicon-log-out"></span> Log out</a> 
  </ul>
-	<h1 color:'red'> Welcome to Admin ATN </h1>
+	<style>
+		h1 {
+  color: red;
+  font-family: Arial;
+  font-size: 300%;
+  ext-align: center;			
+
+}
+	</style>	
+	<h1> Welcome to Admin ATN </h1>
 	 <style>
  body {
  background-image: url('admin.jpeg');
