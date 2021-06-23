@@ -58,7 +58,7 @@ echo "
                 <td>".$result['productprice']."</td>
                 <td>".$result['status']."</td>
 		<td>". $image = $result['image']
-	        print $image;."</td>
+	        echo $image;."</td>
 		
 <td><a
 href='update1.php?id=$result[productid]&n=$result[productname]&p=$result[productprice]&stt=$result[status]&img=$result[image]'>
