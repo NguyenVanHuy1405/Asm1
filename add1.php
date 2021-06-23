@@ -48,11 +48,13 @@
              </tr>
              <tr>
 	     <td>Image</td>   
-             <form method="POST" action="add1.php" enctype="multipart/form-data"> 
-             <input type="hidden" name="size" value="1000"> 
-             <input type="file" name="image"> 
-             <?php require "handling.php"?>
-             </form> 
+	     <form action="upload.php" method="post" enctype="multipart/form-data">
+             <input type="file" name="fileToUpload" id="fileToUpload">
+             <input type="submit" value="Upload Image" name="submit">
+             </form>
+	     </tr>	     
+        
+           
              <tr>
              <td colspan="2" align="center"><input type="submit" id="button" name="submit" value="Add"></td>
              </tr>
