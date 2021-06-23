@@ -34,7 +34,7 @@ echo '<script language="javascript">alert("Upload failed!");</script>';
 }
 $result = pg_query($pg_conn, "SELECT * FROM shop1");
 ?>
-   
+<link rel="stylesheet" href="style.css">   
 <?php
 while ($row = pg_fetch_array($result)) {
 echo "<div id='img_div'>";
@@ -42,6 +42,7 @@ echo "<img src='photo/".$row['image']."' >";
 echo "</div>";
 }
 ?>
+
 </div>
 </body>
 </html>
