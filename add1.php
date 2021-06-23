@@ -46,7 +46,13 @@
              <td>Status</td>
              <td><input type="text" value="" name="status" required></td>
              </tr>
-            
+             <tr>
+             <form method="POST" action="upload.php" enctype="multipart/form-data"> 
+             <input type="hidden" name="size" value="1000000"> 
+             <input type="file" name="image"> 
+             <button type="submit" name="upload">POST</button>
+             <?php require "handling.php"?>
+             </form> 
              <tr>
              <td colspan="2" align="center"><input type="submit" id="button" name="submit" value="Add"></td>
              </tr>
@@ -61,7 +67,8 @@
             $n=$_GET['productname'];
             $p=$_GET['productprice'];
             $stt=$_GET['status'];
-            $query = "INSERT INTO shop1 VALUES ('$id','$n','$p','$stt')";
+	    $img=$_GET['image'];	    
+            $query = "INSERT INTO shop1 VALUES ('$id','$n','$p','$stt','img')";
             $data = pg_query($pg_conn,$query);
             if($data)
             {
