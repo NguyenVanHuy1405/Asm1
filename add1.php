@@ -47,10 +47,10 @@
              <td><input type="text" value="" name="status" required></td>
              </tr>
              <tr>
-             <form method="POST" action="upload.php" enctype="multipart/form-data"> 
-             <input type="hidden" name="size" value="1000000"> 
+	     <td>Image</td>   
+             <form method="POST" action="add1.php" enctype="multipart/form-data"> 
+             <input type="hidden" name="size" value="1000"> 
              <input type="file" name="image"> 
-             <button type="submit" name="upload">POST</button>
              <?php require "handling.php"?>
              </form> 
              <tr>
