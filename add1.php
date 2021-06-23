@@ -26,7 +26,7 @@
              </style>
              <br>
              <form action="" method="GET">
-             <table border"0" bgcolor="white" align="center" cellspacing="20">
+             <table border"0" bgcolor="yellow" align="center" cellspacing="20">
                 <tr>
              <td>Product ID</td>
              <td><input type="text" value="" name="productid" required></td>
