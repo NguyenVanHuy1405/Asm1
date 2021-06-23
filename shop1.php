@@ -28,6 +28,7 @@
                 <th style="background-color:#585858"><p style="color:darkblue">Product Name<p></th>
                 <th style="background-color:#FF0040"><p style="color:darkblue">Product Price<p></th>
                 <th style="background-color:#FF7F50"><p style="color:darkblue">Status<p></th>
+	         <th style="background-color:#FF0040"><p style="color:darkblue">ImageImage<p></th>
 		<th style="background-color:#BA55D3" colspan="2" align="center">Operation</th>	
                 </tr>
 <?php
@@ -56,8 +57,10 @@ echo "
                 <td>".$result['productname']."</td>
                 <td>".$result['productprice']."</td>
                 <td>".$result['status']."</td>
+		<td>".$result['image']."</td>
+		
 <td><a
-href='update1.php?id=$result[productid]&n=$result[productname]&p=$result[productprice]&stt=$result[status]'>
+href='update1.php?id=$result[productid]&n=$result[productname]&p=$result[productprice]&stt=$result[status]&img=$result[image]'>
 Edit/Update</td>
 <td><a href='delete1.php?id=$result[productid]'>Delete</td>
 </tr>
