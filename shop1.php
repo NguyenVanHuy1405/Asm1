@@ -57,10 +57,9 @@ echo "
                 <td>".$result['productname']."</td>
                 <td>".$result['productprice']."</td>
                 <td>".$result['status']."</td>
-		<td>".$result['image']."</td>
 		
 <td><a
-href='update1.php?id=$result[productid]&n=$result[productname]&p=$result[productprice]&stt=$result[status]&img=$result[image]'>
+href='update1.php?id=$result[productid]&n=$result[productname]&p=$result[productprice]&stt=$result[status]'>
 Edit/Update</td>
 <td><a href='delete1.php?id=$result[productid]'>Delete</td>
 </tr>
