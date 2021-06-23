@@ -50,8 +50,7 @@
 	     <td>Image</td> 
 	     <td> 	     
 	     <form action="upload.php" method="post" enctype="multipart/form-data">
-             <input type="file" name="fileToUpload" id="fileToUpload">
-             <input type="submit" value="Upload Image" name="submit">    
+             <input type="file" name="fileToUpload" id="fileToUpload">   
              </form>
 	     </td> 	        
 	     </tr>	     
@@ -72,7 +71,7 @@
             $p=$_GET['productprice'];
             $stt=$_GET['status'];
 	    $img=$_GET['image'];	    
-            $query = "INSERT INTO shop1 VALUES ('$id','$n','$p','$stt','img')";
+            $query = "INSERT INTO shop1 VALUES ('$id','$n','$p','$stt','$img')";
             $data = pg_query($pg_conn,$query);
             if($data)
             {
