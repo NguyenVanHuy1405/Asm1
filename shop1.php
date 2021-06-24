@@ -56,10 +56,10 @@ echo "
                 <td>".$result['productid']."</td>
                 <td>".$result['productname']."</td>
                 <td>".$result['productprice']."</td>
-                <td>".$result['status']."</td>
+                <td>".$result['amount']."</td>
 		
 <td><a
-href='update1.php?id=$result[productid]&n=$result[productname]&p=$result[productprice]&stt=$result[status]'>
+href='update1.php?id=$result[productid]&n=$result[productname]&p=$result[productprice]&am=$result[amount]'>
 Edit/Update</td>
 <td><a href='delete1.php?id=$result[productid]'>Delete</td>
 </tr>
