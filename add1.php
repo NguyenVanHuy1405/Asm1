@@ -43,8 +43,8 @@
              </tr>
             
              <tr>
-             <td>Status</td>
-             <td><input type="text" value="" name="status" required></td>
+             <td>Amount</td>
+             <td><input type="text" value="" name="amount" required></td>
              </tr>     
              <tr>
              <td colspan="2" align="center"><input type="submit" id="button" name="submit" value="Add"></td>
@@ -59,8 +59,8 @@
             $id=$_GET['productid'];
             $n=$_GET['productname'];
             $p=$_GET['productprice'];
-            $stt=$_GET['status'];	    
-            $query = "INSERT INTO shop1 VALUES ('$id','$n','$p','$stt')";
+            $am=$_GET['amount'];	    
+            $query = "INSERT INTO shop1 VALUES ('$id','$n','$p','$am')";
             $data = pg_query($pg_conn,$query);
             if($data)
             {
