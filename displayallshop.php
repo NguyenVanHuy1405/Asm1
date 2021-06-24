@@ -31,7 +31,7 @@ table {
                 <th style="background-color:#EE82EE"><p style="color:#ffff00"><style="text-align:center">Product ID<p></th>
                 <th style="background-color:#FFA07A"><p style="color:#ffff00"><style="text-align:center">Product Name<p></th>
                 <th style="background-color:#EE82EE"><p style="color:#ffff00"><style="text-align:center">Product Price<p></th>
-                <th style="background-color:#FFA07A"><p style="color:#ffff00"><style="text-align:center">Status<p></th>
+                <th style="background-color:#FFA07A"><p style="color:#ffff00"><style="text-align:center"><p></th>
                 
                 </tr>
 <?php
@@ -60,7 +60,7 @@ echo "
 <td>".$result['productid']."</td>
 <td>".$result['productname']."</td>
 <td>".$result['productprice']."</td>
-<td>".$result['status']."</td>
+<td>".$result['amount']."</td>
 </tr>
 ";
 }
@@ -77,10 +77,10 @@ echo "
   <thread style="text-align:left">
                 <tr>
 		
-                <th style="background-color:#FFFF00"><p style="color:darkblue">Product ID<p></th>
+                <th style="background-color:#00FF80"><p style="color:yellow">Product ID<p></th>
                 <th style="background-color:#FF7F50"><p style="color:darkblue">Product Name<p></th>
-                <th style="background-color:#FFFF00"><p style="color:darkblue">Product Price<p></th>
-                <th style="background-color:#FF7F50"><p style="color:darkblue">Status<p></th>
+                <th style="background-color:#00FF80"><p style="color:darkblue">Product Price<p></th>
+                <th style="background-color:#FF7F50"><p style="color:darkblue">Amount<p></th>
                 
                 </tr>
 <?php
@@ -109,7 +109,7 @@ echo "
 <td>".$result['productid']."</td>
 <td>".$result['productname']."</td>
 <td>".$result['productprice']."</td>
-<td>".$result['status']."</td>
+<td>".$result['amount']."</td>
 </tr>
 ";
 }
