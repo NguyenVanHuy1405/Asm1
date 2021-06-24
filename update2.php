@@ -15,7 +15,7 @@ die('Error: Could not connect: ' . pg_last_error());
 $id=$_GET['id'];
 $n=$_GET['n'];
 $p=$_GET['p'];
-$stt=$_GET['stt'];
+$am=$_GET['am'];
 ?>
 <html>
  <head>
@@ -49,8 +49,8 @@ $stt=$_GET['stt'];
  </tr>
 
  <tr>
- <td>Status</td>
- <td><input type="text" value="<?php echo "$stt" ?>" name="status" required></td>
+ <td>Amount</td>
+ <td><input type="text" value="<?php echo "$am" ?>" name="amount" required></td>
  </tr>
 
  <tr>
@@ -66,8 +66,8 @@ if($_GET['submit'])
 $productid = $_GET['productid'];
 $productname = $_GET['productname'];
 $productprice = $_GET['productprice'];
-$status = $_GET['status'];
-  $query = "UPDATE shop2 SET productid='$productid', productname='$productname', productprice='$productprice', status='$status' WHERE productid='$productid' ";
+$am = $_GET['amount'];
+  $query = "UPDATE shop2 SET productid='$productid', productname='$productname', productprice='$productprice', am='$amount' WHERE productid='$productid' ";
 $data = pg_query($pg_conn,$query);
 if($data)
 {
