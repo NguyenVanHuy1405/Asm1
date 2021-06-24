@@ -28,10 +28,10 @@ table {
   <thread style="text-align:left">
                 <tr>
 		
-                <th style="background-color:#EE82EE"><p style="color:#ffff00"><style="text-align:center">Product ID<p></th>
+                <th style="background-color:#EE82EE"><p style="color:#ffff00"style="text-align:center;">Product ID<p></th>
                 <th style="background-color:#FFA07A"><p style="color:#ffff00"><style="text-align:center">Product Name<p></th>
                 <th style="background-color:#EE82EE"><p style="color:#ffff00"><style="text-align:center">Product Price<p></th>
-                <th style="background-color:#FFA07A"><p style="color:#ffff00"><style="text-align:center"><p></th>
+                <th style="background-color:#FFA07A"><p style="color:#ffff00"><style="text-align:center">Amount<p></th>
                 
                 </tr>
 <?php
