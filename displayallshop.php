@@ -78,9 +78,9 @@ echo "
                 <tr>
 		
                 <th style="background-color:#00FF80"><p style="color:yellow">Product ID<p></th>
-                <th style="background-color:#FF7F50"><p style="color:darkblue">Product Name<p></th>
-                <th style="background-color:#00FF80"><p style="color:darkblue">Product Price<p></th>
-                <th style="background-color:#FF7F50"><p style="color:darkblue">Amount<p></th>
+                <th style="background-color:#FF7F50"><p style="color:yellow">Product Name<p></th>
+                <th style="background-color:#00FF80"><p style="color:yellow">Product Price<p></th>
+                <th style="background-color:#FF7F50"><p style="color:yellow">Amount<p></th>
                 
                 </tr>
 <?php
