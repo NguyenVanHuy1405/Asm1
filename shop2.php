@@ -24,10 +24,10 @@
   <thread style="text-align:left">
                 <tr>
 		
-                <<th style="background-color:#FF0040"><p style="color:darkblue">Product ID<p></th>
-                <th style="background-color:#585858"><p style="color:darkblue">Product Name<p></th>
-                <th style="background-color:#FF0040"><p style="color:darkblue">Product Price<p></th>
-                <th style="background-color:#FF7F50"><p style="color:darkblue">Status<p></th>
+                <<th style="background-color:#FF0040"><p style="color:yellow">Product ID<p></th>
+                <th style="background-color:#585858"><p style="color:yellow">Product Name<p></th>
+                <th style="background-color:#FF0040"><p style="color:yellow">Product Price<p></th>
+                <th style="background-color:#FF7F50"><p style="color:yellow">Amount<p></th>
 		<th style="background-color:#BA55D3" colspan="2" align="center">Operation</th>	
                 </tr>
 <?php
@@ -55,9 +55,9 @@ echo "
                 <td>".$result['productid']."</td>
                 <td>".$result['productname']."</td>
                 <td>".$result['productprice']."</td>
-                <td>".$result['status']."</td>
+                <td>".$result['amount']."</td>
 <td><a
-href='update1.php?id=$result[productid]&n=$result[productname]&p=$result[productprice]&stt=$result[status]'>
+href='update1.php?id=$result[productid]&n=$result[productname]&p=$result[productprice]&am=$result[amount]'>
 Edit/Update</td>
 <td><a href='delete1.php?id=$result[productid]'>Delete</td>
 </tr>
