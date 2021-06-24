@@ -67,7 +67,7 @@
 <body>
 
 <div class="dropdown" style="float:left;">
-  <button class="dropbtn">Chosse</button>
+  <button class="dropbtn">Choose</button>
   <div class="dropdown-content" style="left:0;">
   <a href="https://fptapptech.herokuapp.com/displayshop1.php">Shop 1</a>
   <a href="https://fptapptech.herokuapp.com/displayshop2.php">Shop 2</a>
