@@ -49,7 +49,7 @@ $am=$_GET['am'];
  </tr>
 
  <tr>
- <td>Status</td>
+ <td>Amount</td>
  <td><input type="text" value="<?php echo "$am" ?>" name="amount" required></td>
  </tr>
 
