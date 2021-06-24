@@ -31,7 +31,7 @@ table {
                 <th style="background-color:#EE82EE"><p style="color:#ffff00"><style="text-align:center">Product ID<p></th>
                 <th style="background-color:#FFA07A"><p style="color:#ffff00"><style="text-align:center">Product Name<p></th>
                 <th style="background-color:#EE82EE"><p style="color:#ffff00"><style="text-align:center">Product Price<p></th>
-                <th style="background-color:#FFA07A"><p style="color:#ffff00"><style="text-align:center">Status<p></th>
+                <th style="background-color:#FFA07A"><p style="color:#ffff00"><style="text-align:center">Amount<p></th>
                 
                 </tr>
 <?php
@@ -60,7 +60,7 @@ echo "
 <td>".$result['productid']."</td>
 <td>".$result['productname']."</td>
 <td>".$result['productprice']."</td>
-<td>".$result['status']."</td>
+<td>".$result['amount']."</td>
 </tr>
 ";
 }
