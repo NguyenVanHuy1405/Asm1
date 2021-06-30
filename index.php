@@ -55,7 +55,7 @@
       <title>ATN Login Page</title>
      <style>
       body {
-        background-image: url('huy.jpg');
+        background-image: url('huy.jpeg');
         background-attachment: fixed;
         background-size: 100%100%;
       }
