@@ -1,4 +1,32 @@
 <html>
+	<head>
+      
+	<script type = "text/JavaScript">
+	 <!--
+		function AutoRefresh( t ) {
+		   setTimeout("location.reload(true);", t);
+		}
+	 //-->
+	</script>
+    <form action="" method="post">
+         <select name = "time_selection">
+            <option value = 5 >5 second</option>
+            <option value = 10>10 second</option>
+            <option value = 30 selected>30 second</option>
+         </select><br/>
+		<input type="submit" name="timerButton" value="Set time"/>
+    </form> 
+	<?php
+		$sec = 5;
+		if(isset($_POST['timerButton'])) 
+			{ 
+				//get input text
+				$sec = $_POST['time_selection'];
+				
+			}
+		echo "This page will reload itself in $sec second!";
+	?>  
+</head>
 	<ul>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
  	<a href="adminatn.php" class="btn btn-info btn-lg"><span class="glyphicon glyphicon-log-out"></span> Log out</a> 
